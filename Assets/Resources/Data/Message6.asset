@@ -18,5 +18,5 @@ MonoBehaviour:
   npcNegativeAnswer: The one who bothered you, he is packed.
   playerPositiveAnswer: Good, on the right address I guess.
   playerNegativeAnswer: What package?
-  addRating: 0
-  removeRating: 0
+  addRating: 10
+  removeRating: 10

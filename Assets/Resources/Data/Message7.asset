@@ -20,5 +20,5 @@ MonoBehaviour:
     if I\u2019m not wrong."
   playerNegativeAnswer: "I\u2019m not cleaning the mess after you anymore, I\u2019ll
     call the cops."
-  addRating: 0
-  removeRating: 0
+  addRating: 10
+  removeRating: 10

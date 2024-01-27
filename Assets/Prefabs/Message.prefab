@@ -1020,6 +1020,8 @@ MonoBehaviour:
   negativeResponse: {fileID: 7610245900606437170}
   answerPositive: {fileID: 2484785132429669582}
   answerNegative: {fileID: 7267051471718667713}
+  displayControlA: {fileID: 2879906742051577033}
+  displayControlB: {fileID: 6061858172139709006}
   isPositiveFirst: 1
   isAnswered: 0
   timeBeforeDestroy: 2

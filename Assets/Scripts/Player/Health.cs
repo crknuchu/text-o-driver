@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,14 @@ public class Health : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+    }
+
+    private void Update()
+    {
+        if (IsPlayerDead())
+        {
+            QuitGame();
+        }
     }
 
     public void AddHealth(float value)
@@ -46,6 +55,14 @@ public class Health : MonoBehaviour
     public bool IsPlayerDead()
     {
         return currentHealth <= 0.0f;
+    }
+    
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+                Application.Quit();
     }
     
 }

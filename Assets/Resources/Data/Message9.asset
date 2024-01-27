@@ -20,5 +20,5 @@ MonoBehaviour:
     text you more later."
   playerPositiveAnswer: You mean next month?
   playerNegativeAnswer: "Surely, can\u2019t wait for it."
-  addRating: 0
-  removeRating: 0
+  addRating: 10
+  removeRating: 10

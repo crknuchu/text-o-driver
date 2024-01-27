@@ -19,5 +19,5 @@ MonoBehaviour:
   npcNegativeAnswer: Your day off is when I say that. Get your ass over there.
   playerPositiveAnswer: "That should be Dave\u2019s job."
   playerNegativeAnswer: "It\u2019s my day off."
-  addRating: 0
-  removeRating: 0
+  addRating: 10
+  removeRating: 10
