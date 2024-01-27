@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
+    public CameraShake cameraShake;
+    public RumbleManager rumbleManager;
     private void OnTriggerEnter(Collider other)
     {
-        print("TEST");
+        StartCoroutine(cameraShake.Shake());
+        RumbleManager.instance.RumblePulse(0.5f,0.75f,0.4f);
     }
+    
 }
