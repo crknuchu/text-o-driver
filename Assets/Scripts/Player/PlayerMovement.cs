@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private Lane currentLane = Lane.middle;
     public Health playerHealth;
     public float drinkingTime;
-    private bool isDrinking = false;
+    // private bool isDrinking = false;
     // public Canvas beer;
     
     private void Awake()
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckInputs()
     {
-        if (InputManager.instance.controls.InGame.OptionC.WasPressedThisFrame() && !isDrinking)
+        if (InputManager.instance.controls.InGame.OptionC.WasPressedThisFrame())
         {
             DrinkBeer();
         }
