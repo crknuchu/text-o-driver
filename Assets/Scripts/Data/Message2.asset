@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message2
+  m_EditorClassIdentifier: 
+  charachter: 0
+  npcQuestion: "Can you go to the parent\u2019s meeting in the school today?"
+  npcPositiveAnswer: I have the important meeting in the afternoon.
+  npcNegativeAnswer: THE ONE IN WHICH OUR KIDS ARE GOING!
+  playerPositiveAnswer: "Yeah sure, on the other hand it\u2019s better, last time
+    you went to the wrong school."
+  playerNegativeAnswer: Sure, just tell me in which school...

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message7
+  m_EditorClassIdentifier: 
+  charachter: 3
+  npcQuestion: Why are those barrels near my gate?
+  npcPositiveAnswer: "Oh, in that case I\u2019m not touching it."
+  npcNegativeAnswer: "I forgot to move it, I\u2019ll do it in the afternoon."
+  playerPositiveAnswer: "Someone left it and told that some nitro-glycerine is inside,
+    if I\u2019m not wrong."
+  playerNegativeAnswer: "I\u2019m not cleaning the mess after you anymore, I\u2019ll
+    call the cops."
