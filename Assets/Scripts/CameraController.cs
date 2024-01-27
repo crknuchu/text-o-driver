@@ -13,11 +13,16 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (InputManager.instance.controls.Rumble.RumbleAction.WasPressedThisFrame())
+        {
+            RumbleManager.instance.RumblePulse(0.25f, 0.75f, 0.25f);
+        }
     }
 
     private static void InitComponents()
     {
         Debug.Log("Majmune");
+        InputManager.instance.SetInputContext(InputContext.InGame);
+        Debug.Log(InputManager.instance.playerInput.currentActionMap);
     }
 }
