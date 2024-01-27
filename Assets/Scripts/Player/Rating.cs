@@ -12,16 +12,20 @@ public class Rating : MonoBehaviour
         currentRating = maxRating;
     }
 
-    public void AddHealth(float value)
+    public void AddRating(float value)
     {
-        currentRating += value;
+        if (currentRating < maxRating)
+            currentRating += value;
+        if (currentRating > maxRating)
+            currentRating = maxRating;
     }    
-    public void RemoveHealth(float value)
+    public void RemoveRating(float value)
     {
-        currentRating -= value;
+        if (currentRating > 0)
+            currentRating -= value;
     }
 
-    public float GetMaxHealth()
+    public float GetMaxRating()
     {
         return maxRating;
     }
