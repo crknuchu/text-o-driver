@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6a266dc-f91f-4990-b325-81483f091e2e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MIlance.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MIlance.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Rating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Rating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Phone/MessageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Phone/MessageController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706359646570</updated>
-      <workItem from="1706359649254" duration="11450000" />
+      <workItem from="1706359649254" duration="12198000" />
     </task>
     <servers />
   </component>

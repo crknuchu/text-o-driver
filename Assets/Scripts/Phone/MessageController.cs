@@ -30,8 +30,8 @@ public class MessageController : MonoBehaviour
         if (isAnswered)
         {
             question.enabled = false;
-            answerPositive.enabled = false;
-            answerNegative.enabled = false;
+            answerPositive.gameObject.SetActive(false);
+            answerNegative.gameObject.SetActive(false);
             StartCoroutine(DestroyMessage(3.5f));
             return;
         }
@@ -92,17 +92,17 @@ public class MessageController : MonoBehaviour
             if (InputManager.instance.controls.InGame.OptionA.WasPressedThisFrame())
             {
                 //POSITIVE
-                BoostPlayer();
                 positiveResponse.enabled = true;
                 negativeResponse.enabled = false;
+                BoostPlayer();
                 isAnswered = true;
             }
             else if (InputManager.instance.controls.InGame.OptionB.WasPressedThisFrame())
             {
                 //NEGATIVE
-                HurtPlayer();
                 positiveResponse.enabled = false;
                 negativeResponse.enabled = true;
+                HurtPlayer();
                 isAnswered = true;
             }
         }
