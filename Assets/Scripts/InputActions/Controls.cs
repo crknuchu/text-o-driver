@@ -158,6 +158,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OptionC"",
+                    ""type"": ""Button"",
+                    ""id"": ""4920986c-7e8d-41e2-a85e-a638d69ad6e4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -292,6 +301,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""OptionB"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e6c74b8e-1384-40db-88b1-7d91506fd8c7"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""OptionC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94f49c27-c83d-403d-bc1a-09d0b43d0b8d"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""OptionC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -335,6 +366,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_InGame_Right = m_InGame.FindAction("Right", throwIfNotFound: true);
         m_InGame_OptionA = m_InGame.FindAction("OptionA", throwIfNotFound: true);
         m_InGame_OptionB = m_InGame.FindAction("OptionB", throwIfNotFound: true);
+        m_InGame_OptionC = m_InGame.FindAction("OptionC", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -508,6 +540,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_InGame_Right;
     private readonly InputAction m_InGame_OptionA;
     private readonly InputAction m_InGame_OptionB;
+    private readonly InputAction m_InGame_OptionC;
     public struct InGameActions
     {
         private @Controls m_Wrapper;
@@ -516,6 +549,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Right => m_Wrapper.m_InGame_Right;
         public InputAction @OptionA => m_Wrapper.m_InGame_OptionA;
         public InputAction @OptionB => m_Wrapper.m_InGame_OptionB;
+        public InputAction @OptionC => m_Wrapper.m_InGame_OptionC;
         public InputActionMap Get() { return m_Wrapper.m_InGame; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -537,6 +571,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @OptionB.started += instance.OnOptionB;
             @OptionB.performed += instance.OnOptionB;
             @OptionB.canceled += instance.OnOptionB;
+            @OptionC.started += instance.OnOptionC;
+            @OptionC.performed += instance.OnOptionC;
+            @OptionC.canceled += instance.OnOptionC;
         }
 
         private void UnregisterCallbacks(IInGameActions instance)
@@ -553,6 +590,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @OptionB.started -= instance.OnOptionB;
             @OptionB.performed -= instance.OnOptionB;
             @OptionB.canceled -= instance.OnOptionB;
+            @OptionC.started -= instance.OnOptionC;
+            @OptionC.performed -= instance.OnOptionC;
+            @OptionC.canceled -= instance.OnOptionC;
         }
 
         public void RemoveCallbacks(IInGameActions instance)
@@ -604,5 +644,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnRight(InputAction.CallbackContext context);
         void OnOptionA(InputAction.CallbackContext context);
         void OnOptionB(InputAction.CallbackContext context);
+        void OnOptionC(InputAction.CallbackContext context);
     }
 }

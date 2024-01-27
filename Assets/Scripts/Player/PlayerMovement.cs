@@ -25,10 +25,15 @@ public class PlayerMovement : MonoBehaviour
     public float timeToMove = 0.5f;
     private float laneDistance = 3;
     private Lane currentLane = Lane.middle;
-
+    public Health playerHealth;
+    public float drinkingTime;
+    private bool isDrinking = false;
+    // public Canvas beer;
+    
     private void Awake()
     {
         InputManager.instance.SetInputContext(InputContext.InGame);
+        // beer.enabled = false;
     }
 
     private void Update()
@@ -38,6 +43,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckInputs()
     {
+        if (InputManager.instance.controls.InGame.OptionC.WasPressedThisFrame() && !isDrinking)
+        {
+            DrinkBeer();
+        }
+        
         switch (currentLane)
         {
             case Lane.left :
@@ -91,5 +101,26 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = targetPos;
         isMoving = false;
+    }
+    
+    private IEnumerator Countdown(float drinkingTime)
+    {
+        
+        // beer.enabled = true; 
+        while(true) {
+            yield return new WaitForSeconds(drinkingTime); 
+            isMoving = false;
+            // beer.enabled = false;
+        }
+    }
+
+    void DrinkBeer()
+    {
+        // isMoving = true;
+        // isDrinking = true;
+        playerHealth.AddHealth(10);
+        print(playerHealth.GetCurrentHealth());
+        // StartCoroutine(Countdown(3));
+        // isDrinking = false;
     }
 }
