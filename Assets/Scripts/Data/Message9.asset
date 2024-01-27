@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charachter: 3
   npcQuestion: Hey remember that fishing trip we organized for the next week?
-  npcPositiveAnswer: "Yeah, anyway it\u2019s cancelled since Jo got drunk, fell asleep
-    in the mud and got fucked by a boar."
-  npcNegativeAnswer: "Well... it\u2019s cancelled, Jo got fucked by the boar, text
-    you more later."
+  npcPositiveAnswer: "Yeah, anyway it\u2019s cancelled since Kevin got drunk, fell
+    asleep in the mud and got fucked by a boar."
+  npcNegativeAnswer: "Well... it\u2019s cancelled, Kevin got fucked by the boar,
+    text you more later."
   playerPositiveAnswer: You mean next month?
   playerNegativeAnswer: "Surely, can\u2019t wait for it."
   addRating: 0

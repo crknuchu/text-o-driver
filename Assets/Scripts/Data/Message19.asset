@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message19
+  m_EditorClassIdentifier: 
+  charachter: 3
+  npcQuestion: Dude you are not going to believe this! I was returning home trough
+    park and I saw a UFO!
+  npcPositiveAnswer: I heard a buzzing sound, like a swarm of bees, and then I saw
+    many small lights flying over me.
+  npcNegativeAnswer: Come on, why you have to mention that every time! Anyway, I
+    was sober and I know what I saw!
+  playerPositiveAnswer: Really! Tell me more please!
+  playerNegativeAnswer: "LSD again? After that what happened on that camping trip.
+    I\u2019m talking about the event with the racoon."
+  addRating: 5
+  removeRating: 10
