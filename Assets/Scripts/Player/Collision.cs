@@ -6,7 +6,6 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
     public CameraShake cameraShake;
-    public RumbleManager rumbleManager;
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(cameraShake.Shake());
