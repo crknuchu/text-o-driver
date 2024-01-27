@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -27,10 +28,12 @@ public class PlayerMovement : MonoBehaviour
     private Lane currentLane = Lane.middle;
     public Health playerHealth;
     public float drinkingTime;
+    public Image beerImage;
     
     private void Awake()
     {
         InputManager.instance.SetInputContext(InputContext.InGame);
+        beerImage.enabled = false;
     }
 
     private void Update()
@@ -103,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoving = true;
         playerHealth.AddHealth(10);
+        beerImage.enabled = true;
         StartCoroutine(StartTimer());
     }
     
@@ -110,5 +114,6 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(drinkingTime);
         isMoving = false;
+        beerImage.enabled = false;
     }
 }

@@ -17,6 +17,6 @@ public class ObstacleDamage : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         playerHealth.RemoveHealth(damage);
-        print(playerHealth.GetCurrentHealth());
+        // print(playerHealth.GetCurrentHealth());
     }
 }
