@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 82051607387951831}
   - component: {fileID: 5322999598063876301}
   - component: {fileID: 798900788717564631}
+  - component: {fileID: -7748501732089773301}
   m_Layer: 0
   m_Name: GOLT
   m_TagString: Untagged
@@ -149,6 +150,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7748501732089773301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808789803834215529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4051581db07fd3d4da8523011b49b0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &7717813064263287081
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
 
     public void AddHealth(float value)
     {
-        currentHealth += value;
+        currentHealth = Mathf.Max(maxHealth, currentHealth + value);
     }    
     public void RemoveHealth(float value)
     {

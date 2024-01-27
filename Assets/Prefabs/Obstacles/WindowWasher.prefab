@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8484745433795209930}
   - component: {fileID: 6049121888880584870}
   - component: {fileID: 7352352775816746644}
+  - component: {fileID: -8136165994556736123}
   m_Layer: 0
   m_Name: WindowWasher
   m_TagString: Untagged
@@ -149,6 +150,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8136165994556736123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148111376902157739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4051581db07fd3d4da8523011b49b0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  playerHealth: {fileID: 0}
 --- !u!1 &7800022742428871458
 GameObject:
   m_ObjectHideFlags: 0

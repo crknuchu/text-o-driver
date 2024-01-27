@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7363639411439650709}
   - component: {fileID: 821264200764748571}
   - component: {fileID: 1781784883359450756}
+  - component: {fileID: 4523213790475784664}
   m_Layer: 0
   m_Name: Juggler
   m_TagString: Untagged
@@ -233,3 +234,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4523213790475784664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350951169685582460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4051581db07fd3d4da8523011b49b0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
