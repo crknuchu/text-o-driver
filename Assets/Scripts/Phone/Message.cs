@@ -4,12 +4,19 @@ using UnityEngine;
 
 public enum CharacterType
 {
-    Wife,
+    AngryHusband,
+    BalkanBoy,
+    BendersWitnesses,
+    BestFriend,
+    BestTel,
     Boss,
     CarMechanic,
-    Neighbor,
+    Delievery,
     Mobster,
-    BestFriend
+    Neighbor,
+    Prankster,
+    TheParty,
+    Wife
 }
 
 [CreateAssetMenu]
@@ -24,4 +31,9 @@ public class Message : ScriptableObject
     [Header("Player")]
     public string playerPositiveAnswer;
     public string playerNegativeAnswer;
+
+    [Header("Rating")]
+    public float addRating = 0f;
+    public float removeRating = 0f;
+
 }
