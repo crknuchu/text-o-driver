@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message16
   m_EditorClassIdentifier: 
-  charachter: 4
+  charachter: 0
   npcQuestion: Hello sir, sorry to bother you but we can offer you our new pack of
     services. Super mega cool pack with unlimited everything for just 30% more money.
   npcPositiveAnswer: Perfect, also you will be charged additional money for change

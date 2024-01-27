@@ -9,6 +9,21 @@ public enum InputContext
     InGame
 }
 
+public enum EInputAction
+{
+    OnActionA,
+    OnActionB,
+    Submit,
+    Cancel,
+    Quit
+}
+
+public enum EInputDevice
+{
+    Keyboard,
+    Controller
+}
+
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
@@ -40,6 +55,7 @@ public class InputManager : MonoBehaviour
     }
 
     [SerializeField] private InputContext inputContext;
+    [SerializeField] private EInputDevice inputDevice;
     void Update()
     {
         
@@ -53,7 +69,6 @@ public class InputManager : MonoBehaviour
             case InputContext.InGame:
                 //playerInput.actions.FindActionMap("InGame").Enable();
                 playerInput.SwitchCurrentActionMap("InGame");
-
                 break;
             
             case InputContext.Menu:
@@ -61,5 +76,15 @@ public class InputManager : MonoBehaviour
                 playerInput.SwitchCurrentActionMap("Menu");
                 break;
         }
+    }
+
+    public void SetInputDevice(EInputDevice device)
+    {
+        inputDevice = device;
+    }
+
+    public EInputDevice GetInputDevice()
+    {
+        return inputDevice;
     }
 }

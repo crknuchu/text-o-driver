@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message18
+  m_EditorClassIdentifier: 
+  charachter: 0
+  npcQuestion: Hey man, did you left your car at our service last week?
+  npcPositiveAnswer: "Ok, then we crashed someone else\u2019s car."
+  npcNegativeAnswer: Well, in a way, see we took it to the test drive, and had a
+    little, big... accident.
+  playerPositiveAnswer: "Nope, I\u2019m in my car now."
+  playerNegativeAnswer: Yup, are they done?
+  addRating: 5
+  removeRating: 10

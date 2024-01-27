@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message1
   m_EditorClassIdentifier: 
-  charachter: 12
+  charachter: 0
   npcQuestion: "Baby would you love me if I didn\u2019t exist?"
   npcPositiveAnswer: But I would not exist, who could you love. O you are so stupid
   npcNegativeAnswer: You asshole then you would love someone else!

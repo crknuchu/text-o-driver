@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message15
   m_EditorClassIdentifier: 
-  charachter: 12
+  charachter: 0
   npcQuestion: What do you do in 1 hour?
   npcPositiveAnswer: Nothing much. You just have to go buy some groceries, pick up
     the kids from school, go to the other side of the city...
