@@ -16,6 +16,8 @@ public class MessageController : MonoBehaviour
     [SerializeField] private Text negativeResponse;
     [SerializeField] private Button answerPositive;
     [SerializeField] private Button answerNegative;
+    [SerializeField] private Image displayControlA;
+    [SerializeField] private Image displayControlB;
 
     public bool isPositiveFirst = true;
     public bool isAnswered = false;
@@ -38,6 +40,8 @@ public class MessageController : MonoBehaviour
             question.enabled = false;
             answerPositive.gameObject.SetActive(false);
             answerNegative.gameObject.SetActive(false);
+            displayControlA.enabled = false;
+            displayControlB.enabled = false;
             StartCoroutine(DestroyMessage(timeBeforeDestroy));
             return;
         }
