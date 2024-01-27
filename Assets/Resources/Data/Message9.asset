@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message9
   m_EditorClassIdentifier: 
-  charachter: 3
+  charachter: 0
   npcQuestion: Hey remember that fishing trip we organized for the next week?
   npcPositiveAnswer: "Yeah, anyway it\u2019s cancelled since Jo got drunk, fell asleep
     in the mud and got fucked by a boar."

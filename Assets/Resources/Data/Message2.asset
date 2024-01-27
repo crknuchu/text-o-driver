@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message2
   m_EditorClassIdentifier: 
-  charachter: 12
+  charachter: 0
   npcQuestion: "Can you go to the parent\u2019s meeting in the school today?"
   npcPositiveAnswer: I have the important meeting in the afternoon.
   npcNegativeAnswer: THE ONE IN WHICH OUR KIDS ARE GOING!

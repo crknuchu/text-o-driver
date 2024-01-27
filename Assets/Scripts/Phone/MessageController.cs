@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,10 +20,15 @@ public class MessageController : MonoBehaviour
     public bool isPositiveFirst = true;
     public bool isAnswered = false;
 
-    
+    public int timeBeforeDestroy = 2;
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Start()
     {
-        ShowMessage();
+        
     }
     
     void Update()
@@ -32,7 +38,7 @@ public class MessageController : MonoBehaviour
             question.enabled = false;
             answerPositive.gameObject.SetActive(false);
             answerNegative.gameObject.SetActive(false);
-            StartCoroutine(DestroyMessage(3.5f));
+            StartCoroutine(DestroyMessage(timeBeforeDestroy));
             return;
         }
         HandleInputs();
@@ -77,6 +83,7 @@ public class MessageController : MonoBehaviour
         if (message != null)
         {
             InitUIElements();
+            MessageSpawner.instance.isMessageActive = true;
         }
     }
 
@@ -148,7 +155,8 @@ public class MessageController : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        
+
+        MessageSpawner.instance.isMessageActive = false;
         Destroy(gameObject);
     }
 }
