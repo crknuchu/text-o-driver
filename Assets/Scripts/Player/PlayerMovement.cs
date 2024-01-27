@@ -27,15 +27,10 @@ public class PlayerMovement : MonoBehaviour
     private Lane currentLane = Lane.middle;
     public Health playerHealth;
     public float drinkingTime;
-
-    // public Timer timer;
-    // private bool isDrinking = false;
-    // public Canvas beer;
     
     private void Awake()
     {
         InputManager.instance.SetInputContext(InputContext.InGame);
-        // beer.enabled = false;
     }
 
     private void Update()
@@ -81,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
                 }
                 break;
         }
-        //if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame())
     }
 
     private IEnumerator MovePlayer(Vector3 direction)
@@ -108,12 +102,8 @@ public class PlayerMovement : MonoBehaviour
     void DrinkBeer()
     {
         isMoving = true;
-        // isDrinking = true;
         playerHealth.AddHealth(10);
         StartCoroutine(StartTimer());
-        // print(playerHealth.GetCurrentHealth());
-        // StartCoroutine(Countdown(3));
-        // isDrinking = false;
     }
     
     IEnumerator StartTimer()
