@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 853257221698105280}
   - component: {fileID: 3542798493823914878}
   - component: {fileID: 1713926934789688929}
+  - component: {fileID: 653232361905159861}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -78,3 +79,15 @@ MonoBehaviour:
   m_DefaultActionMap: Menu
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &653232361905159861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250390614975892594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856bd8dd5ad4914409038dda44cfbc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
