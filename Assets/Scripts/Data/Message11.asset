@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message11
+  m_EditorClassIdentifier: 
+  charachter: 7
+  npcQuestion: "Hello sir, did you order \u201CAss killer dildo 2000\u201D? I\u2019m
+    in front of your house."
+  npcPositiveAnswer: "Yeah this is... oh, it\u2019s the same address but in another
+    city, never mind, buy sir."
+  npcNegativeAnswer: "Yeah, I heard that a few times. I\u2019ll leave the package
+    in front of your doors, it\u2019s already paid."
+  playerPositiveAnswer: Are you sure you got the right address?
+  playerNegativeAnswer: "I didn\u2019t order that."
+  addRating: 5
+  removeRating: 5

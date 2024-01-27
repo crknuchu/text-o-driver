@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message5
   m_EditorClassIdentifier: 
-  charachter: 1
+  charachter: 5
   npcQuestion: Did you made that documentation I received yesterday?
   npcPositiveAnswer: I thought so, I have to find who wrote that.
   npcNegativeAnswer: "The documentation is garbage, sometimes I wonder why I\u2019m
     keeping you here."
   playerPositiveAnswer: What documentation?
   playerNegativeAnswer: "I did and I\u2019m proud of the whole project."
+  addRating: 0
+  removeRating: 0

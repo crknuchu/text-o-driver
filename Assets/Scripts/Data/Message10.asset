@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
-  m_Name: Message4
+  m_Name: Message10
   m_EditorClassIdentifier: 
-  charachter: 6
-  npcQuestion: Last night was wonderful.
-  npcPositiveAnswer: You are always short on words, but not on some other things.
-  npcNegativeAnswer: "You don\u2019t even know where you were last night! again!"
-  playerPositiveAnswer: It surely was...
-  playerNegativeAnswer: "Are you thinking about the game, or the \u201Cafter party\u201D?"
+  charachter: 0
+  npcQuestion: Stay away from my wife!
+  npcPositiveAnswer: Sir you got Anonymous porn addict society. Do you want to join?
+  npcNegativeAnswer: Who is your wife? I know a few of them.
+  playerPositiveAnswer: Oh sorry, goodbye.
+  playerNegativeAnswer: You bastard! Just... keep away from her!
   addRating: 10
   removeRating: 5

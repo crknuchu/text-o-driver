@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
-  m_Name: Message3
+  m_Name: Message18
   m_EditorClassIdentifier: 
   charachter: 6
-  npcQuestion: "I\u2019m pregnant."
-  npcPositiveAnswer: "What do you mean if the baby is mine... anyway I\u2019m not,
-    I was just trying to test you."
-  npcNegativeAnswer: "So that is how I\u2019m memorized in you phone! You asshole!"
-  playerPositiveAnswer: "You sure it\u2019s yours?"
-  playerNegativeAnswer: Mike? Is that you?
+  npcQuestion: Hey man, did you left your car at our service last week?
+  npcPositiveAnswer: "Ok, then we crashed someone else\u2019s car."
+  npcNegativeAnswer: Well, in a way, see we took it to the test drive, and had a
+    little, big... accident.
+  playerPositiveAnswer: "Nope, I\u2019m in my car now."
+  playerNegativeAnswer: Yup, are they done?
   addRating: 5
   removeRating: 10
