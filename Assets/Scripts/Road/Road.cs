@@ -7,7 +7,7 @@ public class Tile : MonoBehaviour
     public float speed;
     public float unloadDistance;
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position -= new Vector3(0, 0, speed);
         if (transform.position.z <= -unloadDistance)
