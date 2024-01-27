@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     private Lane currentLane = Lane.middle;
     public Health playerHealth;
     public float drinkingTime;
+
+    // public Timer timer;
     // private bool isDrinking = false;
     // public Canvas beer;
     
@@ -102,25 +104,21 @@ public class PlayerMovement : MonoBehaviour
         transform.position = targetPos;
         isMoving = false;
     }
-    
-    private IEnumerator Countdown(float drinkingTime)
-    {
-        
-        // beer.enabled = true; 
-        while(true) {
-            yield return new WaitForSeconds(drinkingTime); 
-            isMoving = false;
-            // beer.enabled = false;
-        }
-    }
 
     void DrinkBeer()
     {
-        // isMoving = true;
+        isMoving = true;
         // isDrinking = true;
         playerHealth.AddHealth(10);
-        print(playerHealth.GetCurrentHealth());
+        StartCoroutine(StartTimer());
+        // print(playerHealth.GetCurrentHealth());
         // StartCoroutine(Countdown(3));
         // isDrinking = false;
+    }
+    
+    IEnumerator StartTimer()
+    {
+        yield return new WaitForSeconds(drinkingTime);
+        isMoving = false;
     }
 }
