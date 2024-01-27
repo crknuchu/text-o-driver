@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 
 using System.Collections.Generic;
-
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,40 +25,51 @@ public class PlayerMovement : MonoBehaviour
     public float timeToMove = 0.5f;
     private float laneDistance = 3;
     private Lane currentLane = Lane.middle;
-    private InputAction moveLeft;
-    private InputAction moveRight;
+
+    private void Awake()
+    {
+        InputManager.instance.SetInputContext(InputContext.InGame);
+    }
 
     private void Update()
     {
-        if (currentLane == Lane.middle)
+        CheckInputs();
+    }
+
+    private void CheckInputs()
+    {
+        switch (currentLane)
         {
-            if (Input.GetKey(KeyCode.A) && !isMoving)
-            {
-                StartCoroutine(MovePlayer(Vector3.left * laneDistance));
-                currentLane = Lane.left;
-            }
-            if (Input.GetKey(KeyCode.D) && !isMoving)
-            {
-                StartCoroutine(MovePlayer(Vector3.right * laneDistance));
-                currentLane = Lane.right;
-            }
+            case Lane.left :
+                if (InputManager.instance.controls.InGame.Right.WasPressedThisFrame() && !isMoving)
+                {
+                    StartCoroutine(MovePlayer(Vector3.right * laneDistance));
+                    currentLane = Lane.middle;
+                }
+                break;
+            
+            case Lane.right :
+                if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame() && !isMoving)
+                {
+                    StartCoroutine(MovePlayer(Vector3.left * laneDistance));
+                    currentLane = Lane.middle;
+                }
+                break;
+            
+            default:
+                if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame() && !isMoving)
+                {
+                    StartCoroutine(MovePlayer(Vector3.left * laneDistance));
+                    currentLane = Lane.left;
+                }
+                else if (InputManager.instance.controls.InGame.Right.WasPressedThisFrame() && !isMoving)
+                {
+                    StartCoroutine(MovePlayer(Vector3.right * laneDistance));
+                    currentLane = Lane.right;
+                }
+                break;
         }
-        else if (currentLane == Lane.right)
-        {
-            if (Input.GetKey(KeyCode.A) && !isMoving)
-            {
-                StartCoroutine(MovePlayer(Vector3.left * laneDistance));
-                currentLane = Lane.middle;
-            }
-        }
-        else
-        {
-            if (Input.GetKey(KeyCode.D) && !isMoving)
-            {
-                StartCoroutine(MovePlayer(Vector3.right * laneDistance));
-                currentLane = Lane.middle;
-            }
-        }
+        //if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame())
     }
 
     private IEnumerator MovePlayer(Vector3 direction)
@@ -68,6 +79,8 @@ public class PlayerMovement : MonoBehaviour
 
         origPos = transform.position;
         targetPos = origPos + direction;
+        
+        RumbleManager.instance.RumblePulse(0f,0.15f,0.1f);
 
         while (elapsedTime < timeToMove)
         {
