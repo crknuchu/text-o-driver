@@ -39,6 +39,7 @@ public class GameStateManager : MonoBehaviour
 
     public void QuitGame()
     {
+        RumbleManager.instance.RumblePulse(0,0,0);
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
         #endif
