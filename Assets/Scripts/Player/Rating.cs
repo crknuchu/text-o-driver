@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Rating : MonoBehaviour
@@ -18,7 +19,7 @@ public class Rating : MonoBehaviour
     {
         if (IsPlayerDead())
         {
-            QuitGame();
+            SceneManager.LoadScene(0);
         }
     }
 
