@@ -21,6 +21,7 @@ public class MessageController : MonoBehaviour
     [SerializeField] private Image displayControlA;
     [SerializeField] private Image displayControlB;
     private bool hasAnswered;
+    public AudioSource audioSource;
 
     public bool isPositiveFirst = true;
     public bool isAnswered = false;
@@ -48,10 +49,6 @@ public class MessageController : MonoBehaviour
             StartCoroutine(DestroyMessage(timeBeforeDestroy));
             return;
         }
-        // else
-        // {
-        //     StartCoroutine(StartTimer(2));
-        // }
         UpdateMenuControls();
         HandleInputs();
     }
@@ -106,6 +103,7 @@ public class MessageController : MonoBehaviour
         }
         // print("AAAAAAAAAAA");
         // StartCoroutine(StartTimer(5));
+        audioSource.Play();
     }
 
     void HandleInputs()
