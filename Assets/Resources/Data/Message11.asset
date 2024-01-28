@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message11
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 7
   npcQuestion: "Hello sir, did you order \u201CAss killer dildo 2000\u201D? I\u2019m
     in front of your house."
   npcPositiveAnswer: "Yeah this is... oh, it\u2019s the same address but in another
@@ -21,5 +21,5 @@ MonoBehaviour:
     in front of your doors, it\u2019s already paid."
   playerPositiveAnswer: Are you sure you got the right address?
   playerNegativeAnswer: "I didn\u2019t order that."
-  addRating: 5
-  removeRating: 5
+  addRating: 15
+  removeRating: 20

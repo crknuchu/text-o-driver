@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charachter: 0
   npcQuestion: Stay away from my wife!
-  npcPositiveAnswer: Sir you got Anonymous porn addict society. Do you want to join?
-  npcNegativeAnswer: Who is your wife? I know a few of them.
-  playerPositiveAnswer: Oh sorry, goodbye.
-  playerNegativeAnswer: You bastard! Just... keep away from her!
-  addRating: 10
-  removeRating: 5
+  npcPositiveAnswer: Oh sorry, goodbye.
+  npcNegativeAnswer: You bastard! Just... keep away from her!
+  playerPositiveAnswer: Sir you got Anonymous porn addict society. Do you want to
+    join?
+  playerNegativeAnswer: Who is your wife? I know a few of them.
+  addRating: 20
+  removeRating: 15

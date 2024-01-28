@@ -22,5 +22,5 @@ MonoBehaviour:
   playerPositiveAnswer: Really! Tell me more please!
   playerNegativeAnswer: "LSD again? After that what happened on that camping trip.
     I\u2019m talking about the event with the racoon."
-  addRating: 5
-  removeRating: 10
+  addRating: 15
+  removeRating: 20

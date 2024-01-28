@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message7
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 9
   npcQuestion: Why are those barrels near my gate?
   npcPositiveAnswer: "Oh, in that case I\u2019m not touching it."
-  npcNegativeAnswer: "I forgot to move it, I\u2019ll do it in the afternoon."
+  npcNegativeAnswer: "I\u2019m not cleaning the mess after you anymore, I\u2019ll
+    call the cops."
   playerPositiveAnswer: "Someone left it and told that some nitro-glycerine is inside,
     if I\u2019m not wrong."
-  playerNegativeAnswer: "I\u2019m not cleaning the mess after you anymore, I\u2019ll
-    call the cops."
+  playerNegativeAnswer: "I forgot to move it, I\u2019ll do it in the afternoon."
   addRating: 10
-  removeRating: 10
+  removeRating: 30

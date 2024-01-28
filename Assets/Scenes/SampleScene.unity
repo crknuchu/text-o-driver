@@ -2516,11 +2516,11 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 960
+    height: 640
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 52
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3811,6 +3811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802658029}
   - component: {fileID: 1802658028}
+  - component: {fileID: 1802658030}
   m_Layer: 0
   m_Name: RumbleManager
   m_TagString: Untagged
@@ -3845,6 +3846,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802658030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802658027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856bd8dd5ad4914409038dda44cfbc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810957083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,7 +3908,7 @@ MonoBehaviour:
   - {fileID: 7148111376902157739, guid: 86ecb459405f1db42a801e97f227fa0b, type: 3}
   - {fileID: 2069877960404696521, guid: e2059e638eb84e04286f1a507823fcbd, type: 3}
   - {fileID: 922607113720797579, guid: c1067599b19831248af5ea87bc1bf674, type: 3}
-  repeatRate: 2
+  repeatRate: 0.85
 --- !u!4 &1839723767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095797866967046917, guid: c2e1f248a91b0cb48a84550153785321, type: 3}

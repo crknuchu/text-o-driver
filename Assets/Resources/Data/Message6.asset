@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message6
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 8
   npcQuestion: The package is gone.
   npcPositiveAnswer: Yes... on the watery address.
   npcNegativeAnswer: The one who bothered you, he is packed.
   playerPositiveAnswer: Good, on the right address I guess.
   playerNegativeAnswer: What package?
   addRating: 10
-  removeRating: 10
+  removeRating: 20

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
-  m_Name: Message13
+  m_Name: Message21
   m_EditorClassIdentifier: 
-  charachter: 1
-  npcQuestion: Stojane...
-  npcPositiveAnswer: You know what...
-  npcNegativeAnswer: Opalim te golim!
-  playerPositiveAnswer: What?
-  playerNegativeAnswer: Molim?
+  charachter: 7
+  npcQuestion: You have the package waiting, but we cannot deliver it to you until
+    you give us our address and access to your bank accounts.
+  npcPositiveAnswer: Well, it was worth trying.
+  npcNegativeAnswer: Ok, so we emptied your account, thanks sucker!
+  playerPositiveAnswer: No way.
+  playerNegativeAnswer: Sure, here it is.
   addRating: 15
-  removeRating: 20
+  removeRating: 30

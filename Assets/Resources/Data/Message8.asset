@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message8
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 5
   npcQuestion: Go and unload the truck in warehouse 5.
   npcPositiveAnswer: You are right, I know I can count on you. Now come here to help
     Dave with that!
   npcNegativeAnswer: Your day off is when I say that. Get your ass over there.
   playerPositiveAnswer: "That should be Dave\u2019s job."
   playerNegativeAnswer: "It\u2019s my day off."
-  addRating: 10
-  removeRating: 10
+  addRating: 15
+  removeRating: 15

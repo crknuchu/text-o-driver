@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Random = System.Random;
 
@@ -45,6 +46,7 @@ public class MessageController : MonoBehaviour
             StartCoroutine(DestroyMessage(timeBeforeDestroy));
             return;
         }
+        UpdateMenuControls();
         HandleInputs();
     }
 
@@ -70,6 +72,20 @@ public class MessageController : MonoBehaviour
             Vector3 temp = answerPositive.GetComponent<Transform>().position;
             answerPositive.GetComponent<Transform>().position = answerNegative.GetComponent<Transform>().position;
             answerNegative.GetComponent<Transform>().position = temp;
+        }
+    }
+
+    void UpdateMenuControls()
+    {
+        if (InputManager.instance.GetInputDevice() == EInputDevice.Controller)
+        {
+            displayControlA.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionA, EInputDevice.Controller);
+            displayControlB.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionB, EInputDevice.Controller);
+        }
+        else
+        {
+            displayControlA.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionA, EInputDevice.Keyboard);
+            displayControlB.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionB, EInputDevice.Keyboard);
         }
     }
 
@@ -142,6 +158,7 @@ public class MessageController : MonoBehaviour
 
     void HurtPlayer()
     {
+        RumbleManager.instance.RumblePulse(0.15f, 0.15f, 0.1f);
         player.GetComponent<Rating>().RemoveRating(message.removeRating);
     }
 

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message17
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 2
   npcQuestion: "I\u2019m sorry sir, do you have time to talk about our lord and master?"
   npcPositiveAnswer: Oh... well nobody ever answered with yes.
   npcNegativeAnswer: "But sir, you don\u2019t want to burn in robot hell, do you."
   playerPositiveAnswer: Yes.
   playerNegativeAnswer: Not now.
-  addRating: 10
-  removeRating: 5
+  addRating: 15
+  removeRating: 20
