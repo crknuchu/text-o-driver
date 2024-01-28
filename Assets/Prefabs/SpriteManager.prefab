@@ -79,15 +79,24 @@ MonoBehaviour:
   - action: 1
     spriteKeyboard: {fileID: 21300000, guid: f2bfba4d856c21842a90dd130c965460, type: 3}
     spriteController: {fileID: 21300000, guid: 986d39c986f6a3f47995f4e52fa9e77f, type: 3}
-  - action: 2
+  - action: 5
     spriteKeyboard: {fileID: 21300000, guid: 8d660013a31322b40a3e73532389ef90, type: 3}
     spriteController: {fileID: 21300000, guid: 7e66721f93fcc204da42e64c02dcd6b0, type: 3}
-  - action: 3
+  - action: 6
     spriteKeyboard: {fileID: 21300000, guid: ae5387239f8182c40aa412d0753db78b, type: 3}
     spriteController: {fileID: 21300000, guid: 986d39c986f6a3f47995f4e52fa9e77f, type: 3}
-  - action: 4
+  - action: 7
     spriteKeyboard: {fileID: 21300000, guid: bad13f176eceef34aa9e24a7a23ba570, type: 3}
     spriteController: {fileID: 21300000, guid: 986d39c986f6a3f47995f4e52fa9e77f, type: 3}
+  - action: 2
+    spriteKeyboard: {fileID: 21300000, guid: ed6cf2a4ae241e045ac730874ad8d890, type: 3}
+    spriteController: {fileID: 21300000, guid: 1b7c5d5d969ecae469c5d425d9d77e2b, type: 3}
+  - action: 4
+    spriteKeyboard: {fileID: 21300000, guid: dcb0654a9f4f5864abdf610d6c89e578, type: 3}
+    spriteController: {fileID: 21300000, guid: 30b6c815bfc1cf74aacedbcd84c5d1fb, type: 3}
+  - action: 3
+    spriteKeyboard: {fileID: 21300000, guid: 6fa17d37cc4ac6e469530aab7ae1e927, type: 3}
+    spriteController: {fileID: 21300000, guid: 4716f272409738d4a9383f94927994e8, type: 3}
 --- !u!114 &4185345206033575922
 MonoBehaviour:
   m_ObjectHideFlags: 0
