@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Message18
   m_EditorClassIdentifier: 
   charachter: 6
-  npcQuestion: Hey man, did you left your car at our service last week?
+  npcQuestion: Hey man, did you leave your car at our service last week?
   npcPositiveAnswer: "Ok, then we crashed someone else\u2019s car."
   npcNegativeAnswer: Well, in a way, see we took it to the test drive, and had a
     little, big... accident.

@@ -21,4 +21,4 @@ MonoBehaviour:
     if I\u2019m not wrong."
   playerNegativeAnswer: "I forgot to move it, I\u2019ll do it in the afternoon."
   addRating: 10
-  removeRating: 30
+  removeRating: 25

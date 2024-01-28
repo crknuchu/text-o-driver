@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
+  m_Name: Message24
+  m_EditorClassIdentifier: 
+  charachter: 3
+  npcQuestion: Fucking something boy?
+  npcPositiveAnswer: "Can\u2019t complain. I\u2019m as potent as in those days when
+    I slept with the biggest country music start at that moment. I certainly told
+    you that."
+  npcNegativeAnswer: Well, that did not stop me from taking the most beautiful country
+    music singer to bed 30 years ago. I certainly told you that.
+  playerPositiveAnswer: Always, how about you uncle.
+  playerNegativeAnswer: "Uncle I\u2019m 35 and married!"
+  addRating: 15
+  removeRating: 25
