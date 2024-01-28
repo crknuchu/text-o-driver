@@ -4370,7 +4370,7 @@ MonoBehaviour:
   - {fileID: 7148111376902157739, guid: 86ecb459405f1db42a801e97f227fa0b, type: 3}
   - {fileID: 2069877960404696521, guid: e2059e638eb84e04286f1a507823fcbd, type: 3}
   - {fileID: 922607113720797579, guid: c1067599b19831248af5ea87bc1bf674, type: 3}
-  repeatRate: 0.85
+  repeatRate: 0.7
 --- !u!4 &1839723767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095797866967046917, guid: c2e1f248a91b0cb48a84550153785321, type: 3}
