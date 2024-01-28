@@ -79,16 +79,8 @@ public class MessageController : MonoBehaviour
 
     void UpdateMenuControls()
     {
-        if (InputManager.instance.GetInputDevice() == EInputDevice.Controller)
-        {
-            displayControlA.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionA, EInputDevice.Controller);
-            displayControlB.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionB, EInputDevice.Controller);
-        }
-        else
-        {
-            displayControlA.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionA, EInputDevice.Keyboard);
-            displayControlB.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionB, EInputDevice.Keyboard);
-        }
+        displayControlA.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionA, InputManager.instance.GetInputDevice());
+        displayControlB.sprite = SpriteManager.instance.GetSprite(EInputAction.OnActionB, InputManager.instance.GetInputDevice());
     }
 
     public void ShowMessage()
