@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckInputs()
     {
-        if (InputManager.instance.controls.InGame.OptionC.WasPressedThisFrame())
+        if (InputManager.instance.controls.InGame.OptionC.WasPressedThisFrame() && !isMoving)
         {
             DrinkBeer();
         }
