@@ -1851,6 +1851,7 @@ MonoBehaviour:
   emptyWheel: {fileID: 902417948}
   wheelHand: {fileID: 1599976003}
   wheelHandHolder: {fileID: 1311296535}
+  cig: {fileID: 1320713823}
 --- !u!54 &801517765
 Rigidbody:
   m_ObjectHideFlags: 0
