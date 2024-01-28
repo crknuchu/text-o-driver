@@ -22,7 +22,9 @@ public class MessageController : MonoBehaviour
     [SerializeField] private Image displayControlB;
     private bool hasAnswered;
     public AudioSource audioSource;
-
+    public AudioSource applauseSource;
+    public AudioSource booSource;
+    
     public bool isPositiveFirst = true;
     public bool isAnswered = false;
 
@@ -101,8 +103,6 @@ public class MessageController : MonoBehaviour
             InitUIElements();
             MessageSpawner.instance.isMessageActive = true;
         }
-        // print("AAAAAAAAAAA");
-        // StartCoroutine(StartTimer(5));
         audioSource.Play();
     }
 
@@ -122,6 +122,7 @@ public class MessageController : MonoBehaviour
                 negativeResponse.enabled = false;
                 BoostPlayer();
                 isAnswered = true;
+                applauseSource.Play();
             }
             else if (InputManager.instance.controls.InGame.OptionB.WasPressedThisFrame())
             {
@@ -130,6 +131,7 @@ public class MessageController : MonoBehaviour
                 negativeResponse.enabled = true;
                 HurtPlayer();
                 isAnswered = true;
+                booSource.Play();
             }
         }
         else
@@ -141,6 +143,7 @@ public class MessageController : MonoBehaviour
                 negativeResponse.enabled = true;
                 HurtPlayer();
                 isAnswered = true;
+                booSource.Play();
             }
             else if (InputManager.instance.controls.InGame.OptionB.WasPressedThisFrame())
             {
@@ -149,6 +152,7 @@ public class MessageController : MonoBehaviour
                 negativeResponse.enabled = false;
                 BoostPlayer();
                 isAnswered = true;
+                applauseSource.Play();
             }
         }
         
