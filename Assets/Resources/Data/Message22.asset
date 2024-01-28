@@ -19,4 +19,4 @@ MonoBehaviour:
   playerPositiveAnswer: Nope.
   playerNegativeAnswer: Well, maybe yes.
   addRating: 15
-  removeRating: 30
+  removeRating: 25
