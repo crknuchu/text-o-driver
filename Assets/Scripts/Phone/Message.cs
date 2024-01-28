@@ -16,7 +16,9 @@ public enum CharacterType
     Neighbor,
     Prankster,
     TheParty,
-    Wife
+    Wife,
+    Police,
+    UncleJoca,
 }
 
 [CreateAssetMenu]
@@ -66,6 +68,10 @@ public class Message : ScriptableObject
                 return "THE PARTY";
             case CharacterType.Neighbor:
                 return "Will the Neighbor";
+            case CharacterType.Police:
+                return "Police Department";
+            case CharacterType.UncleJoca:
+                return "Uncle Joca";
         }
 
         return "Stojan";
