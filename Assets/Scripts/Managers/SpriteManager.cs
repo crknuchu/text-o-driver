@@ -32,4 +32,21 @@ public class SpriteManager : MonoBehaviour
 
     public CharachterToSprite[] charachterToSprite;
     public InputActionToSprite[] InputActionToSprites;
+
+    public Sprite GetSprite(EInputAction action, EInputDevice device)
+    {
+        foreach (var i in InputActionToSprites)
+        {
+            if (action == i.action)
+            {
+                if (device == EInputDevice.Controller)
+                {
+                    return i.spriteController;
+                }
+
+                return i.spriteKeyboard;
+            }
+        }
+        return null;
+    }
 }
