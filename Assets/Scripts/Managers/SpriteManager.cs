@@ -28,6 +28,12 @@ public class SpriteManager : MonoBehaviour
         {
             instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        DontDestroyOnLoad(gameObject);
     }
 
     public CharachterToSprite[] charachterToSprite;

@@ -36,15 +36,20 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        controls = new Controls();
+     
+        playerInput = GetComponent<PlayerInput>();
+        
         if (instance == null)
         {
             instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
 
-        controls = new Controls();
-
-        playerInput = GetComponent<PlayerInput>();
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnEnable()

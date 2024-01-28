@@ -17,6 +17,12 @@ public class RumbleManager : MonoBehaviour
         {
             instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        DontDestroyOnLoad(gameObject);
     }
 
     public void RumblePulse(float lowFrequency, float highFrequency, float duration)

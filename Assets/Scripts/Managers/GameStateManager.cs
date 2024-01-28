@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public enum GameState
 {
@@ -37,15 +35,6 @@ public class GameStateManager : MonoBehaviour
     {
         // Set the initial game state
         SetGameState(GameState.MainMenu);
-    }
-
-    public void QuitGame()
-    {
-        RumbleManager.instance.RumblePulse(0,0,0);
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-            Application.Quit();
     }
 
     public void SetGameState(GameState newState)
