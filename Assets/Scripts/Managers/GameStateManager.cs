@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -16,6 +17,7 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance { get; private set; }
 
     public GameState CurrentGameState { get; private set; }
+    public float stopwatchTime = 0f;
 
     private void Awake()
     {
@@ -73,6 +75,7 @@ public class GameStateManager : MonoBehaviour
 
             case GameState.GameOver:
                 // Handle actions for the game over state
+                SceneManager.LoadScene(2);
                 Debug.Log("Switched to Game Over");
                 break;
         }
@@ -97,5 +100,6 @@ public class GameStateManager : MonoBehaviour
     public void GameOver()
     {
         SetGameState(GameState.GameOver);
+        
     }
 }

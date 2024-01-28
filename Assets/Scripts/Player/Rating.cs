@@ -19,7 +19,7 @@ public class Rating : MonoBehaviour
     {
         if (IsPlayerDead())
         {
-            SceneManager.LoadScene(0);
+            GameStateManager.Instance.SetGameState(GameState.GameOver);
         }
     }
 
@@ -50,14 +50,6 @@ public class Rating : MonoBehaviour
     public bool IsPlayerDead()
     {
         return currentRating <= 0.0f;
-    }
-    
-    public void QuitGame()
-    {
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-                Application.Quit();
     }
 
 }
