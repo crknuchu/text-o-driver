@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using Random = System.Random;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     public Image emptyWheel;
     public Image wheelHand;
     public GameObject wheelHandHolder;
+    public Image cig;
     
     private void Awake()
     {
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         beerImage.enabled = false;
         wheelHand.enabled = true;
         emptyWheel.enabled = false;
+        cig.enabled = false;
     }
 
     private void Update()
@@ -128,11 +131,24 @@ public class PlayerMovement : MonoBehaviour
 
     void DrinkBeer()
     {
-        isMoving = true;
-        playerHealth.AddHealth(10);
-        beerImage.enabled = true;
-        emptyWheel.enabled = true;
-        wheelHand.enabled = false;
+        Random r = new Random();
+        if (r.Next(100) < 50)
+        {
+            isMoving = true;
+            playerHealth.AddHealth(10);
+            beerImage.enabled = true;
+            emptyWheel.enabled = true;
+            wheelHand.enabled = false;
+        }
+        else
+        {
+            isMoving = true;
+            playerHealth.AddHealth(10);
+            cig.enabled = true;
+            emptyWheel.enabled = true;
+            wheelHand.enabled = false;
+        }
+        
         StartCoroutine(StartTimer());
     }
     
@@ -143,5 +159,6 @@ public class PlayerMovement : MonoBehaviour
         beerImage.enabled = false;
         emptyWheel.enabled = false;
         wheelHand.enabled = true;
+        cig.enabled = false;
     }
 }
