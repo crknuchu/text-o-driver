@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charachter: 12
   npcQuestion: "Can you go to the parent\u2019s meeting in the school today?"
-  npcPositiveAnswer: I have the important meeting in the afternoon.
+  npcPositiveAnswer: "Yeah sure, on the other hand it\u2019s better, last time you
+    went to the wrong school. "
   npcNegativeAnswer: THE ONE IN WHICH OUR KIDS ARE GOING!
-  playerPositiveAnswer: "Yeah sure, on the other hand it\u2019s better, last time
-    you went to the wrong school."
+  playerPositiveAnswer: I have the important meeting in the afternoon.
   playerNegativeAnswer: Sure, just tell me in which school...
   addRating: 10
   removeRating: 25
