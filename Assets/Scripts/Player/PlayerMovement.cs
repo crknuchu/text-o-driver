@@ -88,8 +88,6 @@ public class PlayerMovement : MonoBehaviour
 
         origPos = transform.position;
         targetPos = origPos + direction;
-        
-        RumbleManager.instance.RumblePulse(0f,0.15f,0.1f);
 
         while (elapsedTime < timeToMove)
         {
