@@ -3214,7 +3214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumTime: 2
-  maximumTime: 5
+  maximumTime: 3
   isMessageActive: 0
   prefab: {fileID: 7664098744171542738, guid: ea30d8f50d95fa34b8cb6478a1fbe43f, type: 3}
 --- !u!4 &1145365833
