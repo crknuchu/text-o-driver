@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using Random = System.Random;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -29,11 +30,18 @@ public class PlayerMovement : MonoBehaviour
     public Health playerHealth;
     public float drinkingTime;
     public Image beerImage;
+    public Image emptyWheel;
+    public Image wheelHand;
+    public GameObject wheelHandHolder;
+    public Image cig;
     
     private void Awake()
     {
         InputManager.instance.SetInputContext(InputContext.InGame);
         beerImage.enabled = false;
+        wheelHand.enabled = true;
+        emptyWheel.enabled = false;
+        cig.enabled = false;
     }
 
     private void Update()
@@ -54,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
                 if (InputManager.instance.controls.InGame.Right.WasPressedThisFrame() && !isMoving)
                 {
                     StartCoroutine(MovePlayer(Vector3.right * laneDistance));
+                    RotateWheelRight();
                     currentLane = Lane.middle;
                 }
                 break;
@@ -61,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
             case Lane.right :
                 if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame() && !isMoving)
                 {
+                    RotateWheelLeft();
                     StartCoroutine(MovePlayer(Vector3.left * laneDistance));
                     currentLane = Lane.middle;
                 }
@@ -69,11 +79,13 @@ public class PlayerMovement : MonoBehaviour
             default:
                 if (InputManager.instance.controls.InGame.Left.WasPressedThisFrame() && !isMoving)
                 {
+                    RotateWheelLeft();
                     StartCoroutine(MovePlayer(Vector3.left * laneDistance));
                     currentLane = Lane.left;
                 }
                 else if (InputManager.instance.controls.InGame.Right.WasPressedThisFrame() && !isMoving)
                 {
+                    RotateWheelRight();
                     StartCoroutine(MovePlayer(Vector3.right * laneDistance));
                     currentLane = Lane.right;
                 }
@@ -100,11 +112,41 @@ public class PlayerMovement : MonoBehaviour
         isMoving = false;
     }
 
+    void RotateWheelLeft()
+    {
+        Vector3 v1 = new Vector3(0, 0, 0);
+        Vector3 v2 = new Vector3(0, 0, 45);
+        wheelHandHolder.transform.Rotate(new Vector3(0,0,45));
+    }
+    
+    void RotateWheelRight()
+    {
+        Vector3 v1 = new Vector3(0, 0, 0);
+        Vector3 v2 = new Vector3(10, 0, 0);
+        wheelHandHolder.transform.Rotate(new Vector3(0,0,-45));
+        // StartCoroutine(StartTimer());
+    }
+
     void DrinkBeer()
     {
-        isMoving = true;
-        playerHealth.AddHealth(10);
-        beerImage.enabled = true;
+        Random r = new Random();
+        if (r.Next(100) < 50)
+        {
+            isMoving = true;
+            playerHealth.AddHealth(10);
+            beerImage.enabled = true;
+            emptyWheel.enabled = true;
+            wheelHand.enabled = false;
+        }
+        else
+        {
+            isMoving = true;
+            playerHealth.AddHealth(10);
+            cig.enabled = true;
+            emptyWheel.enabled = true;
+            wheelHand.enabled = false;
+        }
+        
         StartCoroutine(StartTimer());
     }
     
@@ -113,5 +155,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(drinkingTime);
         isMoving = false;
         beerImage.enabled = false;
+        emptyWheel.enabled = false;
+        wheelHand.enabled = true;
+        cig.enabled = false;
     }
 }
