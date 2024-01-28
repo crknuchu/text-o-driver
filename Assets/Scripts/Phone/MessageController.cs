@@ -20,6 +20,7 @@ public class MessageController : MonoBehaviour
     [SerializeField] private Button answerNegative;
     [SerializeField] private Image displayControlA;
     [SerializeField] private Image displayControlB;
+    private bool hasAnswered;
 
     public bool isPositiveFirst = true;
     public bool isAnswered = false;
@@ -32,7 +33,7 @@ public class MessageController : MonoBehaviour
 
     void Start()
     {
-        
+        InvokeRepeating("checkIsAnswered", 5, 5.0f);
     }
     
     void Update()
@@ -47,6 +48,10 @@ public class MessageController : MonoBehaviour
             StartCoroutine(DestroyMessage(timeBeforeDestroy));
             return;
         }
+        // else
+        // {
+        //     StartCoroutine(StartTimer(2));
+        // }
         UpdateMenuControls();
         HandleInputs();
     }
@@ -99,6 +104,8 @@ public class MessageController : MonoBehaviour
             InitUIElements();
             MessageSpawner.instance.isMessageActive = true;
         }
+        // print("AAAAAAAAAAA");
+        // StartCoroutine(StartTimer(5));
     }
 
     void HandleInputs()
@@ -173,5 +180,23 @@ public class MessageController : MonoBehaviour
 
         MessageSpawner.instance.isMessageActive = false;
         Destroy(gameObject);
+    }
+    
+    IEnumerator StartTimer(float time)
+    {
+        // hasAnswered = false;
+        yield return new WaitForSeconds(time);
+        if (!isAnswered)
+        {
+            HurtPlayer();
+        }
+    }
+
+    void checkIsAnswered()
+    {
+        if (!isAnswered)
+        {
+            HurtPlayer();
+        }
     }
 }
