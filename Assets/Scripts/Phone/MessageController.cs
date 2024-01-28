@@ -158,6 +158,7 @@ public class MessageController : MonoBehaviour
 
     void HurtPlayer()
     {
+        RumbleManager.instance.RumblePulse(0.15f, 0.15f, 0.1f);
         player.GetComponent<Rating>().RemoveRating(message.removeRating);
     }
 
