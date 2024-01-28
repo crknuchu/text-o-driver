@@ -13,6 +13,9 @@ public enum EInputAction
 {
     OnActionA,
     OnActionB,
+    OnActionC,
+    Left,
+    Right,
     Submit,
     Cancel,
     Quit
