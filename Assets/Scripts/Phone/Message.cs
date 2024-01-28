@@ -35,5 +35,40 @@ public class Message : ScriptableObject
     [Header("Rating")]
     public float addRating = 0f;
     public float removeRating = 0f;
+    
+    public static string GetName(CharacterType type)
+    {
+        switch (type)
+        {
+            case CharacterType.Boss:
+                return "Boss";
+            case CharacterType.Delievery:
+                return "Delievery";
+            case CharacterType.Wife:
+                return "Wife";
+            case CharacterType.Mobster:
+                return "Velja Nevolja";
+            case CharacterType.Prankster:
+                return "Unknown Number";
+            case CharacterType.AngryHusband:
+                return "Angry Joe";
+            case CharacterType.BalkanBoy:
+                return "Balkan Boy";
+            case CharacterType.BendersWitnesses:
+                return "Bender's Witnesses";
+            case CharacterType.BestFriend:
+                return "Jimmy BFF";
+            case CharacterType.BestTel:
+                return "BesTel";
+            case CharacterType.CarMechanic:
+                return "Car Mechanic";
+            case CharacterType.TheParty:
+                return "THE PARTY";
+            case CharacterType.Neighbor:
+                return "Will the Neighbor";
+        }
+
+        return "Stojan";
+    }
 
 }

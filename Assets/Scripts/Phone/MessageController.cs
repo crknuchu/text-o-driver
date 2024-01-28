@@ -12,6 +12,7 @@ public class MessageController : MonoBehaviour
     [Header("Player")] [SerializeField] private GameObject player;
     
     [Header("UI")]
+    [SerializeField] private Text name;
     [SerializeField] private Text question;
     [SerializeField] private Text positiveResponse;
     [SerializeField] private Text negativeResponse;
@@ -53,7 +54,8 @@ public class MessageController : MonoBehaviour
     void InitUIElements()
     {
         question.text = message.npcQuestion;
-        
+
+        name.text = Message.GetName(message.charachter);
         negativeResponse.text = message.npcNegativeAnswer;
         negativeResponse.enabled = false;
         positiveResponse.text = message.npcPositiveAnswer;
