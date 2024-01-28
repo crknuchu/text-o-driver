@@ -9,7 +9,7 @@ public class Obstacle : MonoBehaviour
     public float speed;
     public float unloadDistance;
     private Rigidbody rb;
-    public float magnitude = 100;
+    // public float magnitude = 100;
 
     private void Start()
     {
@@ -34,8 +34,8 @@ public class Obstacle : MonoBehaviour
     IEnumerator moveObject()
     {
         Random r = new Random();
-        Vector3 Destination = new Vector3(transform.position.x + r.Next(-2,2) , 5, transform.position.z - 5);
-        float totalMovementTime = 2f; //the amount of time you want the movement to take
+        Vector3 Destination = new Vector3(transform.position.x + r.Next(-1,1) , 5, transform.position.z - 5);
+        float totalMovementTime = 3f; //the amount of time you want the movement to take
         float currentMovementTime = 0f;//The amount of time that has passed
         while (Vector3.Distance(transform.localPosition, Destination) > 0) {
             currentMovementTime += Time.deltaTime;
