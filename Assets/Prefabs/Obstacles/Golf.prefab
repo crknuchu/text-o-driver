@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.25
   unloadDistance: 20
+  magnitude: 100
 --- !u!54 &3091833789753057605
 Rigidbody:
   m_ObjectHideFlags: 0
