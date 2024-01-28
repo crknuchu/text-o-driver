@@ -299,10 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -448,6 +448,10 @@ Transform:
   - {fileID: 113363889}
   - {fileID: 1091811650}
   - {fileID: 546094763}
+  - {fileID: 986283386}
+  - {fileID: 494388503}
+  - {fileID: 1711279168}
+  - {fileID: 1718221840}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &92517224 stripped
@@ -660,10 +664,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -787,10 +791,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -827,7 +831,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 73558005}
     m_Modifications:
     - target: {fileID: 6842194118866564659, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_Name
@@ -835,15 +839,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05416107
+      value: 0.26345348
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.385202
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.158154
+      value: 28.24393
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalRotation.w
@@ -851,15 +855,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -997,10 +1001,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1191,7 +1195,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 73558005}
     m_Modifications:
     - target: {fileID: 2478104450479186155, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_Name
@@ -1199,15 +1203,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.32248688
+      value: -0.004872322
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.385202
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.66927
+      value: -18.244953
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1318,6 +1322,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464292897}
   m_CullTransparentMesh: 1
+--- !u!4 &494388503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
+  m_PrefabInstance: {fileID: 1703129989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534549933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,10 +1475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1628,10 +1637,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1730,10 +1739,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2182,7 +2191,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 73558005}
     m_Modifications:
     - target: {fileID: 2264328053931057471, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_Name
@@ -2190,15 +2199,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02443695
+      value: 0.3420515
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.385202
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 76.77399
+      value: 43.859764
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2206,15 +2215,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2435,10 +2444,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2686,10 +2695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2849,6 +2858,11 @@ MonoBehaviour:
   cameraShakeDuration: 0.5
   cameraShakeDecreaseFactor: 1
   cameraShakeAmount: 0.3
+--- !u!4 &986283386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
+  m_PrefabInstance: {fileID: 454698852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1070703015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3771,8 +3785,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3962,10 +3976,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4022,7 +4036,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 73558005}
     m_Modifications:
     - target: {fileID: 2478104450479186155, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_Name
@@ -4030,15 +4044,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.079790115
+      value: 0.39740467
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -14.385202
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.760735
+      value: 4.846512
       objectReference: {fileID: 0}
     - target: {fileID: 3364128284370550553, guid: f403131959e25c840b1d391b93da79eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4073,6 +4087,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f403131959e25c840b1d391b93da79eb, type: 3}
+--- !u!4 &1711279168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8069663455130276269, guid: 51ef1c794735c1d4cb74df2951092622, type: 3}
+  m_PrefabInstance: {fileID: 262164384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1718221840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6188683335204850556, guid: 35a9a086c9971cf42bd80e4ebde440f1, type: 3}
+  m_PrefabInstance: {fileID: 805517401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1763777586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,10 +4485,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4849,9 +4873,5 @@ SceneRoots:
   - {fileID: 686128392}
   - {fileID: 42850093}
   - {fileID: 1775609311}
-  - {fileID: 454698852}
-  - {fileID: 1703129989}
-  - {fileID: 262164384}
-  - {fileID: 805517401}
   - {fileID: 1489481633}
   - {fileID: 39958061}
