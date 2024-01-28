@@ -58,7 +58,10 @@ public class InputManager : MonoBehaviour
     [SerializeField] private EInputDevice inputDevice;
     void Update()
     {
-        
+        if(playerInput.currentControlScheme == "Gamepad")
+            SetInputDevice(EInputDevice.Controller);
+        else
+            SetInputDevice(EInputDevice.Keyboard);
     }
 
     public void SetInputContext(InputContext value)
