@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message3
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 6
   npcQuestion: "I\u2019m pregnant."
   npcPositiveAnswer: "What do you mean if the baby is mine... anyway I\u2019m not,
     I was just trying to test you."
   npcNegativeAnswer: "So that is how I\u2019m memorized in you phone! You asshole!"
   playerPositiveAnswer: "You sure it\u2019s yours?"
   playerNegativeAnswer: Mike? Is that you?
-  addRating: 5
-  removeRating: 10
+  addRating: 10
+  removeRating: 20

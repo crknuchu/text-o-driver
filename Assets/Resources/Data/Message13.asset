@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message13
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 1
   npcQuestion: Stojane...
   npcPositiveAnswer: You know what...
   npcNegativeAnswer: Opalim te golim!
   playerPositiveAnswer: What?
   playerNegativeAnswer: Molim?
-  addRating: 10
-  removeRating: 10
+  addRating: 15
+  removeRating: 20

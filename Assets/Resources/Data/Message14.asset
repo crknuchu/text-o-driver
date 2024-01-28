@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4e1a7a70ea5d948b6e32a087a52cb6, type: 3}
   m_Name: Message14
   m_EditorClassIdentifier: 
-  charachter: 0
+  charachter: 11
   npcQuestion: Sir we are texting you from THE party. Can we count on your vote on
     the next elections?
   npcPositiveAnswer: Thanks you sire, your package with sugar and oil will arrive
@@ -21,4 +21,4 @@ MonoBehaviour:
   playerPositiveAnswer: Sure.
   playerNegativeAnswer: "I don\u2019t vote."
   addRating: 5
-  removeRating: 10
+  removeRating: 20
